@@ -5,21 +5,16 @@
 }
 
 
+/*********************************** Servicios ***********************************/
 
-nav{
-    transition: .7s; 
-    background: linear-gradient(rgba(5,7,12, 0.3), rgba(5,7,12, 0.3));
-    box-shadow: 0px 13px 13px -16px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 13px 13px -16px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 13px 13px -16px rgba(0,0,0,0.75);
+.services{
+    transition: 2ms;
+}
+.services:hover{
+    transform: scale(1.1);
 }
 
-.abajo{
-    background: white;
-}
-
-
-/* FOOTER */
+/*********************************** Contactanos ***********************************/
 .contactanos{
     padding-top: 30px;
     word-spacing: 2px;
@@ -34,29 +29,62 @@ label{
     font-weight: 600;
 }
 
-
 form {
-    width: 50%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 20%;
     padding: 20px 30px;
     box-shadow: 0px 8px 30px -10px rgba(0, 0, 0, 0.38);
     -webkit-box-shadow: 0px 8px 30px -10px rgba(0, 0, 0, 0.38);
     -moz-box-shadow: 0px 8px 30px -10px rgba(0, 0, 0, 0.38);
 }
-
 textarea, input{
     width: 100%;
 }
-
-
+.btnEnviar{
+    background-color: #eab308;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 900;
+    color: #fff;
+    transition: 0.5s;
+}
+.btnEnviar:hover{
+    background-color: #a28220;
+    transform: scale(1.1);
+}
 .line{
     height: 2px;
     background-color: #529BB1;
     width: 30%;
     margin: 0 auto;
 }
+
+/*********************************** Flotante ***********************************/
+
+.boton_flotante{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #529BB1;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton_flotante:hover{
+    transform: scale(1.2);
+}
+.boton_flotante a i{
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+}
+
+/*********************************** Footer ***********************************/
 
 .redes_sociales{
     display: flex;
@@ -83,5 +111,78 @@ textarea, input{
 i{
     font-size: 25px;
 }
+h4{
+    color: #eab308;
+}
+
+
+/*********************************** Soporte ***********************************/
+
+.title-soporte{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.rating {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.rating__star:hover,
+.rating__star:hover ~ .rating__star {
+    color: transparent;
+}
+
+.rating__star:hover:before,
+.rating__star:hover ~ .rating__star:before {
+    color: #eab308;
+    content: '★';
+    left: 0;
+    position: absolute;
+}
+
+.rating__star {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: transparent;
+    margin: 0 2px;
+    padding: 0;
+    position: relative;
+}
+
+.ayuda{
+    padding: 20px;
+}
+.dato label {
+    margin-bottom: 10px;
+}
+
+form legend {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 5px;
+    border-bottom: #eab308 solid 1px;
+    margin-bottom: 20px;
+}
+form label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.sugerencias textarea{
+    width: 80%;
+}
+
+/*********************************** Mas pequeño ***********************************/
+
+@media screen and (max-width: 850px) {
+    form{
+        margin: 20px 10%;
+    }
+    .carousel{
+        margin-top: 80px;
+    }
+}
+
+
 
 
